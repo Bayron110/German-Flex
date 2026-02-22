@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Germa Flex — Software &amp; Diseño Personalizado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══ FONDOS ANIMADOS ═══ -->
+  <div class="bg-grid"></div>
+  <div class="bg-radial"></div>
+
+  <!-- ════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════ -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="22,2 41,12 41,32 22,42 3,32 3,12" stroke="#0a84ff" stroke-width="1.5" fill="rgba(10,132,255,0.07)"/>
+          <polygon points="22,10 33,17 33,27 22,34 11,27 11,17" stroke="#1fb6ff" stroke-width="1" fill="rgba(31,182,255,0.05)"/>
+          <text x="22" y="27" text-anchor="middle" fill="#1fb6ff" font-family="Exo 2,sans-serif" font-weight="900" font-size="11">GF</text>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-text">GERMA<span>FLEX</span></div>
+        <div class="logo-tagline">Software &amp; Diseño Personalizado</div>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#tecnologias" onclick="closeMenu()">Tecnologías</a></li>
+      <li><a href="#servicios"   onclick="closeMenu()">Software</a></li>
+      <li><a href="#diseno"      onclick="closeMenu()">Diseño</a></li>
+      <li><a href="#nosotros"    onclick="closeMenu()">Nosotros</a></li>
+      <li><a href="#proceso"     onclick="closeMenu()">Proceso</a></li>
+      <li><a href="#contacto"    onclick="closeMenu()" class="nav-cta">Contáctanos</a></li>
+    </ul>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Menú" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       HERO
+  ════════════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Soluciones Digitales &amp; Creativas a tu Medida</div>
+      <h1 class="hero-title">
+        Software que <span class="ab">transforma</span><br>
+        tu negocio en <span class="ar">resultados</span>
+      </h1>
+      <p class="hero-desc">
+        En Germa Flex desarrollamos software personalizado y creamos identidades de marca
+        poderosas. Tecnología y diseño unidos para llevar tu empresa al siguiente nivel.
+      </p>
+      <div class="hero-btns">
+        <a href="#contacto" class="btn-primary">🚀 Iniciar Proyecto</a>
+        <a href="#servicios" class="btn-outline">Ver Servicios →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Proyectos Entregados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-label">Áreas de Servicio</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">A tu Medida</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hex-frame">
+        <div class="hex-ring"></div>
+        <div class="hex-ring"></div>
+        <div class="hex-ring"></div>
+        <div class="tech-badge">Angular</div>
+        <div class="tech-badge">React Native</div>
+        <div class="tech-badge">Node.js</div>
+        <div class="tech-badge">Spring Boot</div>
+        <div class="tech-badge">Django</div>
+        <div class="tech-badge">Branding</div>
+        <div class="hex-center">
+          <div class="big-letter">GF</div>
+          <div class="sub-letter">Dev &amp; Design</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════
+       STACK TECNOLÓGICO
+  ════════════════════════════════════ -->
+  <section id="tecnologias" class="section section-alt">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">// Stack Tecnológico</div>
+      <h2 class="section-title">Las mejores herramientas para <span class="hl">cada solución</span></h2>
+      <p class="section-sub">Trabajamos con frameworks líderes de la industria para garantizarte aplicaciones robustas, escalables y de alto rendimiento.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card reveal reveal-delay-1">
+        <div class="tech-icon blue">🅰️</div>
+        <div class="tech-name">Angular</div>
+        <div class="tech-desc">Framework empresarial de Google para aplicaciones web robustas con TypeScript. Ideal para sistemas corporativos, dashboards y SPAs de alta complejidad.</div>
+        <span class="tech-tag">Frontend Web</span>
+      </div>
+      <div class="tech-card red-accent reveal reveal-delay-2">
+        <div class="tech-icon red">⚛️</div>
+        <div class="tech-name">React Native Reactive</div>
+        <div class="tech-desc">Apps móviles nativas para iOS y Android con un solo codebase, con programación reactiva para experiencias fluidas en tiempo real.</div>
+        <span class="tech-tag red-tag">Mobile Apps</span>
+      </div>
+      <div class="tech-card reveal reveal-delay-3">
+        <div class="tech-icon blue">🟢</div>
+        <div class="tech-name">Node.js</div>
+        <div class="tech-desc">Backend asíncrono de alto rendimiento para APIs REST, GraphQL y microservicios con manejo eficiente de múltiples conexiones simultáneas.</div>
+        <span class="tech-tag">Backend</span>
+      </div>
+      <div class="tech-card red-accent reveal reveal-delay-1">
+        <div class="tech-icon red">☕</div>
+        <div class="tech-name">Spring Boot</div>
+        <div class="tech-desc">El framework Java por excelencia para aplicaciones empresariales. Seguro, escalable y listo para la nube con soporte completo para microservicios.</div>
+        <span class="tech-tag red-tag">Enterprise</span>
+      </div>
+      <div class="tech-card reveal reveal-delay-2">
+        <div class="tech-icon blue">🐍</div>
+        <div class="tech-name">Django</div>
+        <div class="tech-desc">Framework Python para desarrollo web rápido y seguro. Perfecto para plataformas de datos, APIs REST, paneles administrativos y machine learning.</div>
+        <span class="tech-tag">Backend / Data</span>
+      </div>
+      <div class="tech-card red-accent reveal reveal-delay-3">
+        <div class="tech-icon red">☁️</div>
+        <div class="tech-name">Cloud &amp; DevOps</div>
+        <div class="tech-desc">Desplegamos en AWS, GCP o Azure con CI/CD automatizado. Docker, Kubernetes e infraestructura como código para alta disponibilidad.</div>
+        <span class="tech-tag red-tag">Cloud / DevOps</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SERVICIOS SOFTWARE
+  ════════════════════════════════════ -->
+  <section id="servicios" class="section">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">// Desarrollo de Software</div>
+      <h2 class="section-title">Soluciones de software para <span class="hl">tu empresa</span></h2>
+      <p class="section-sub">Desde una idea hasta producción, ofrecemos soluciones integrales adaptadas a las necesidades únicas de tu negocio.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-number">01</div>
+        <div class="service-icon">💻</div>
+        <div class="service-title">Desarrollo Web a Medida</div>
+        <div class="service-desc">Aplicaciones web empresariales con Angular o Django, optimizadas para rendimiento, SEO y experiencia de usuario excepcional.</div>
+        <a href="#contacto" class="service-link">Solicitar →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-number">02</div>
+        <div class="service-icon">📱</div>
+        <div class="service-title">Apps Móviles Nativas</div>
+        <div class="service-desc">Aplicaciones iOS y Android de alto rendimiento con React Native Reactive, experiencias fluidas, notificaciones y capacidades offline.</div>
+        <a href="#contacto" class="service-link">Solicitar →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-number">03</div>
+        <div class="service-icon">🔌</div>
+        <div class="service-title">APIs y Microservicios</div>
+        <div class="service-desc">Arquitecturas backend robustas con Node.js y Spring Boot. APIs documentadas, seguras, eficientes y listas para escalar horizontalmente.</div>
+        <a href="#contacto" class="service-link">Solicitar →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-4">
+        <div class="service-number">04</div>
+        <div class="service-icon">📊</div>
+        <div class="service-title">Sistemas de Gestión</div>
+        <div class="service-desc">ERPs, CRMs y dashboards empresariales a medida con integraciones personalizadas y reportes en tiempo real para decisiones estratégicas.</div>
+        <a href="#contacto" class="service-link">Solicitar →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-5">
+        <div class="service-number">05</div>
+        <div class="service-icon">🔒</div>
+        <div class="service-title">Seguridad y Auditoría</div>
+        <div class="service-desc">OAuth2, JWT, encriptación de datos y auditorías de seguridad. Protegemos tu software y los datos de tus clientes bajo estándares internacionales.</div>
+        <a href="#contacto" class="service-link">Solicitar →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-number">06</div>
+        <div class="service-icon">⚡</div>
+        <div class="service-title">Consultoría Técnica</div>
+        <div class="service-desc">Analizamos tu arquitectura y te guiamos en tecnología, migraciones, optimización de rendimiento y modernización de sistemas legados.</div>
+        <a href="#contacto" class="service-link">Solicitar →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       DISEÑO GRÁFICO
+  ════════════════════════════════════ -->
+  <section id="diseno" class="design-section">
+    <div class="section-header reveal">
+      <div class="design-area-badge">Área Creativa</div>
+      <div class="section-eyebrow">// Diseño Gráfico &amp; Marketing</div>
+      <h2 class="section-title">Presencia visual que <span class="hl">impacta y convierte</span></h2>
+      <p class="section-sub">Tu marca es la primera impresión que da tu empresa. Creamos identidades visuales poderosas, campañas que conectan y comunidades digitales que crecen.</p>
+    </div>
+    <div class="design-grid">
+      <div class="design-card reveal reveal-delay-1">
+        <div class="design-card-num">01</div>
+        <div class="design-card-icon">✏️</div>
+        <div class="design-card-title">Diseño de Logos</div>
+        <div class="design-card-desc">Logotipos únicos, memorables y escalables que capturan la esencia de tu empresa. Entregamos en todos los formatos (AI, SVG, PNG, PDF) listos para cualquier aplicación digital o impresa.</div>
+        <div class="design-card-tags">
+          <span class="design-card-tag">Logomark</span>
+          <span class="design-card-tag">Logotipo</span>
+          <span class="design-card-tag">Isotipo</span>
+          <span class="design-card-tag">Isologo</span>
+        </div>
+        <a href="#contacto" class="design-card-link">Solicitar →</a>
+      </div>
+      <div class="design-card reveal reveal-delay-2">
+        <div class="design-card-num">02</div>
+        <div class="design-card-icon">🎨</div>
+        <div class="design-card-title">Identidad de Marca</div>
+        <div class="design-card-desc">Sistema visual completo de tu empresa: paleta de colores, tipografías, voz de marca, papelería corporativa y manual de uso para que tu marca sea coherente en cada punto de contacto.</div>
+        <div class="design-card-tags">
+          <span class="design-card-tag">Branding</span>
+          <span class="design-card-tag">Manual de Marca</span>
+          <span class="design-card-tag">Papelería</span>
+        </div>
+        <a href="#contacto" class="design-card-link">Solicitar →</a>
+      </div>
+      <div class="design-card reveal reveal-delay-3">
+        <div class="design-card-num">03</div>
+        <div class="design-card-icon">📢</div>
+        <div class="design-card-title">Publicidad &amp; Campañas</div>
+        <div class="design-card-desc">Piezas publicitarias de alto impacto para medios digitales y físicos: banners, flyers, afiches, vallas, anuncios para Google Ads y Meta Ads que generan conversiones reales.</div>
+        <div class="design-card-tags">
+          <span class="design-card-tag">Ads Digitales</span>
+          <span class="design-card-tag">Flyers</span>
+          <span class="design-card-tag">Vallas</span>
+          <span class="design-card-tag">Banners</span>
+        </div>
+        <a href="#contacto" class="design-card-link">Solicitar →</a>
+      </div>
+      <div class="design-card reveal reveal-delay-4">
+        <div class="design-card-num">04</div>
+        <div class="design-card-icon">📲</div>
+        <div class="design-card-title">Gestión de Redes Sociales</div>
+        <div class="design-card-desc">Administramos tu presencia en Instagram, Facebook, LinkedIn y TikTok. Creamos contenido de calidad, planificamos el calendario editorial y crecemos tu comunidad de forma estratégica.</div>
+        <div class="design-card-tags">
+          <span class="design-card-tag">Community Manager</span>
+          <span class="design-card-tag">Contenido</span>
+          <span class="design-card-tag">Estrategia</span>
+        </div>
+        <a href="#contacto" class="design-card-link">Solicitar →</a>
+      </div>
+      <div class="design-card reveal reveal-delay-5">
+        <div class="design-card-num">05</div>
+        <div class="design-card-icon">🖥️</div>
+        <div class="design-card-title">Diseño UI/UX</div>
+        <div class="design-card-desc">Interfaces intuitivas y atractivas para tus apps y plataformas web. Wireframes, design systems y prototipos interactivos en Figma antes de escribir una sola línea de código.</div>
+        <div class="design-card-tags">
+          <span class="design-card-tag">Figma</span>
+          <span class="design-card-tag">Wireframes</span>
+          <span class="design-card-tag">Prototipos</span>
+        </div>
+        <a href="#contacto" class="design-card-link">Solicitar →</a>
+      </div>
+      <div class="design-card reveal reveal-delay-1">
+        <div class="design-card-num">06</div>
+        <div class="design-card-icon">🎬</div>
+        <div class="design-card-title">Motion Graphics &amp; Video</div>
+        <div class="design-card-desc">Animamos tu logo, creamos intros para YouTube, reels animados y videos corporativos. El contenido en movimiento genera hasta 3x más engagement en redes sociales.</div>
+        <div class="design-card-tags">
+          <span class="design-card-tag">Animación</span>
+          <span class="design-card-tag">Reels</span>
+          <span class="design-card-tag">Video Corporativo</span>
+        </div>
+        <a href="#contacto" class="design-card-link">Solicitar →</a>
+      </div>
+    </div>
+    <div class="design-cta-strip reveal">
+      <div class="design-cta-strip-text">
+        <strong>¿Necesitas renovar tu imagen o arrancar desde cero?</strong>
+        <span>Hablemos de tu marca — primera consulta sin costo, sin compromisos.</span>
+      </div>
+      <a href="#contacto" class="btn-design">🎨 Consultar Ahora</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       POR QUÉ NOSOTROS
+  ════════════════════════════════════ -->
+  <section id="nosotros" class="why-section">
+    <div class="why-inner">
+      <div class="why-left">
+        <div class="big-text reveal">
+          ¿Por qué elegir<br>
+          <span class="hl">Germa</span><span class="hl-red">Flex</span>?
+        </div>
+        <p class="reveal reveal-delay-1">
+          No somos una fábrica de software ni una agencia genérica. Somos un equipo que entiende
+          tu negocio antes de escribir una sola línea de código o trazar un solo trazo.
+        </p>
+        <div class="why-features">
+          <div class="why-feat reveal reveal-delay-2">
+            <div class="why-feat-icon">🎯</div>
+            <div class="why-feat-text">
+              <strong>100% Personalizado</strong>
+              <span>No usamos plantillas. Cada solución —de software o diseño— se construye desde cero para ti.</span>
+            </div>
+          </div>
+          <div class="why-feat reveal reveal-delay-3">
+            <div class="why-feat-icon">⚡</div>
+            <div class="why-feat-text">
+              <strong>Entregas Ágiles</strong>
+              <span>Metodología Scrum con sprints definidos, demos regulares y total transparencia en el avance.</span>
+            </div>
+          </div>
+          <div class="why-feat reveal reveal-delay-4">
+            <div class="why-feat-icon">🛡️</div>
+            <div class="why-feat-text">
+              <strong>Soporte Post-entrega</strong>
+              <span>No desaparecemos al entregar. Brindamos soporte continuo, mantenimiento y actualizaciones.</span>
+            </div>
+          </div>
+          <div class="why-feat reveal reveal-delay-5">
+            <div class="why-feat-icon">🎨</div>
+            <div class="why-feat-text">
+              <strong>Tech + Diseño bajo un mismo techo</strong>
+              <span>Desarrollamos el software Y la identidad visual de tu empresa, sin intermediarios.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-right reveal reveal-delay-1">
+        <div class="metric-box">
+          <div class="metric-num">98<span>%</span></div>
+          <div class="metric-label">Clientes Satisfechos</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-num">3<span>x</span></div>
+          <div class="metric-label">Más Rápido al Mercado</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-num">24<span>h</span></div>
+          <div class="metric-label">Tiempo de Respuesta</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-num">5<span>+</span></div>
+          <div class="metric-label">Años de Experiencia</div>
+        </div>
+        <div class="metric-box large">
+          <div class="metric-num">50<span>+</span></div>
+          <div class="metric-label">Proyectos Entregados con Éxito</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       PROCESO
+  ════════════════════════════════════ -->
+  <section id="proceso" class="section section-alt">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">// Cómo Trabajamos</div>
+      <h2 class="section-title">Proceso <span class="hl">claro y transparente</span></h2>
+      <p class="section-sub">De la idea al producto final con un proceso probado que garantiza calidad, cumplimiento de tiempos y tu total satisfacción.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-circle">01</div>
+        <div class="step-title">Descubrimiento</div>
+        <div class="step-desc">Analizamos tus objetivos, definimos el alcance y el enfoque más adecuado para tu proyecto.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-circle">02</div>
+        <div class="step-title">Diseño &amp; Arquitectura</div>
+        <div class="step-desc">Wireframes, prototipos visuales, identidad de marca y arquitectura técnica robusta.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-circle">03</div>
+        <div class="step-title">Desarrollo / Producción</div>
+        <div class="step-desc">Sprints de 2 semanas con demos continuas. Ves el progreso y das feedback en tiempo real.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-4">
+        <div class="step-circle">04</div>
+        <div class="step-title">QA &amp; Revisión</div>
+        <div class="step-desc">Pruebas exhaustivas y revisión creativa. Garantizamos un entregable perfecto.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-5">
+        <div class="step-circle">05</div>
+        <div class="step-title">Lanzamiento &amp; Soporte</div>
+        <div class="step-desc">Entrega final y acompañamiento continuo post-lanzamiento de nuestro equipo.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       CONTACTO
+  ════════════════════════════════════ -->
+  <section id="contacto" class="cta-section">
+    <div class="cta-box reveal">
+      <h2>Cuéntanos tu <span>proyecto</span></h2>
+      <p>¿Listo para transformar tu idea en software real o construir una marca que impacte? Escríbenos y recibe una propuesta personalizada sin ningún costo.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" placeholder="Juan Pérez" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="juan@empresa.com" required>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Empresa / Organización</label>
+          <input type="text" id="empresa" placeholder="Mi Empresa S.A.">
+        </div>
+        <div class="form-group">
+          <label for="servicio">Tipo de servicio</label>
+          <select id="servicio">
+            <option value="">¿Qué necesitas?</option>
+            <optgroup label="── Desarrollo de Software ──">
+              <option>Desarrollo Web (Angular / Django)</option>
+              <option>App Móvil (React Native)</option>
+              <option>APIs y Microservicios</option>
+              <option>Sistema de Gestión / ERP / CRM</option>
+              <option>Consultoría Técnica</option>
+            </optgroup>
+            <optgroup label="── Diseño Gráfico ──">
+              <option>Diseño de Logo</option>
+              <option>Identidad de Marca Completa</option>
+              <option>Publicidad y Campañas</option>
+              <option>Gestión de Redes Sociales</option>
+              <option>Diseño UI/UX</option>
+              <option>Motion Graphics y Video</option>
+            </optgroup>
+            <option>Paquete Software + Diseño</option>
+            <option>No estoy seguro — necesito asesoría</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label for="mensaje">Cuéntanos tu proyecto</label>
+          <textarea id="mensaje" placeholder="Describe brevemente qué deseas construir o qué imagen quieres proyectar. ¿En qué etapa estás actualmente?" required></textarea>
+        </div>
+        <div class="form-group full">
+          <button type="submit" class="btn-submit" id="btnSubmit">🚀 Enviar Solicitud — Es Gratis</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">GERMA<span>FLEX</span></span>
+        <p>Software personalizado e identidades de marca que impulsan negocios. Tu visión, nuestro código y creatividad.</p>
+        <div class="social-links">
+          <a class="social-link" href="#" title="LinkedIn">in</a>
+          <a class="social-link" href="#" title="GitHub">gh</a>
+          <a class="social-link" href="#" title="Twitter/X">𝕏</a>
+          <a class="social-link" href="#" title="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Software</h4>
+        <ul>
+          <li><a href="#servicios">Desarrollo Web</a></li>
+          <li><a href="#servicios">Apps Móviles</a></li>
+          <li><a href="#servicios">APIs &amp; Backend</a></li>
+          <li><a href="#servicios">Sistemas de Gestión</a></li>
+          <li><a href="#servicios">Consultoría Técnica</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Diseño</h4>
+        <ul>
+          <li><a href="#diseno">Logos &amp; Marca</a></li>
+          <li><a href="#diseno">Identidad Corporativa</a></li>
+          <li><a href="#diseno">Publicidad</a></li>
+          <li><a href="#diseno">Redes Sociales</a></li>
+          <li><a href="#diseno">UI/UX &amp; Motion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@germaflex.com">hola@germaflex.com</a></li>
+          <li><a href="tel:+593960621805">+593 960 621 805</a></li>
+          <li><a href="#contacto">Política de Privacidad</a></li>
+          <li><a href="#contacto">Términos de Servicio</a></li>
+        </ul>
+        <!-- Botón WhatsApp en footer -->
+        <a href="https://wa.me/593960621805?text=Hola%20Germa%20Flex%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios."
+           target="_blank" rel="noopener noreferrer" class="wa-footer-btn">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.83.738 5.484 2.027 7.788L0 32l8.418-2.007A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.77-1.852l-.486-.29-5.002 1.194 1.243-4.865-.317-.5A13.267 13.267 0 0 1 2.667 16C2.667 8.637 8.637 2.667 16 2.667S29.333 8.637 29.333 16 23.363 29.333 16 29.333zm7.27-9.908c-.398-.199-2.355-1.162-2.72-1.294-.366-.133-.633-.199-.9.199-.266.398-1.031 1.294-1.264 1.56-.232.265-.465.298-.863.1-.398-.2-1.681-.62-3.203-1.977-1.184-1.056-1.983-2.36-2.215-2.758-.233-.398-.025-.613.175-.811.18-.178.398-.465.597-.698.2-.233.266-.398.399-.664.133-.265.066-.498-.033-.697-.1-.199-.9-2.168-1.232-2.967-.324-.78-.654-.674-.9-.686l-.765-.013c-.266 0-.698.1-1.064.498-.366.398-1.398 1.366-1.398 3.33 0 1.963 1.431 3.861 1.63 4.127.2.265 2.815 4.297 6.822 6.027.953.412 1.697.658 2.277.842.957.305 1.828.262 2.516.159.767-.114 2.355-.963 2.688-1.893.333-.93.333-1.727.233-1.893-.1-.166-.366-.265-.764-.464z" fill="white"/>
+          </svg>
+          <div>
+            <strong>Escríbenos por WhatsApp</strong>
+            <small>Respondemos rápido</small>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 GermaFlex. Todos los derechos reservados.</span>
+      <span>Hecho con <span class="red-dot"></span> y mucho código</span>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════
+       WIDGET FLOTANTE WHATSAPP
+       (derecha, recorre toda la página)
+  ════════════════════════════════════ -->
+  <div class="wa-float" id="waFloat">
+
+    <!-- Tooltip de bienvenida -->
+    <div class="wa-tooltip" id="waTooltip">💬 ¡Hablemos!</div>
+
+    <!-- Burbuja de chat -->
+    <div class="wa-chat-bubble" id="waBubble">
+      <!-- Header -->
+      <div class="wa-chat-header">
+        <div class="wa-chat-avatar">🏢</div>
+        <div class="wa-chat-info">
+          <div class="wa-chat-name">Germa Flex</div>
+          <div class="wa-chat-status">En línea ahora</div>
+        </div>
+        <button class="wa-chat-close" onclick="closeWaChat()" aria-label="Cerrar">✕</button>
+      </div>
+      <!-- Mensajes -->
+      <div class="wa-chat-body">
+        <div class="wa-message">
+          👋 ¡Hola! Somos <strong>Germa Flex</strong>.<br>
+          ¿En qué podemos ayudarte hoy?<br><br>
+          Desarrollamos <em>software personalizado</em> y creamos <em>identidades de marca</em> increíbles. 🚀
+          <div class="wa-message-time">ahora ✓✓</div>
+        </div>
+      </div>
+      <!-- Input -->
+      <div class="wa-chat-footer">
+        <input
+          type="text"
+          class="wa-chat-input"
+          id="waInput"
+          placeholder="Escribe un mensaje..."
+          onkeydown="if(event.key==='Enter') sendWaMessage()"
+        >
+        <button class="wa-chat-send" onclick="sendWaMessage()" aria-label="Enviar">
+          ➤
+        </button>
+      </div>
+    </div>
+
+    <!-- Botón FAB principal -->
+    <button class="wa-fab" id="waFab" onclick="toggleWaChat()" aria-label="Abrir WhatsApp">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.83.738 5.484 2.027 7.788L0 32l8.418-2.007A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.77-1.852l-.486-.29-5.002 1.194 1.243-4.865-.317-.5A13.267 13.267 0 0 1 2.667 16C2.667 8.637 8.637 2.667 16 2.667S29.333 8.637 29.333 16 23.363 29.333 16 29.333zm7.27-9.908c-.398-.199-2.355-1.162-2.72-1.294-.366-.133-.633-.199-.9.199-.266.398-1.031 1.294-1.264 1.56-.232.265-.465.298-.863.1-.398-.2-1.681-.62-3.203-1.977-1.184-1.056-1.983-2.36-2.215-2.758-.233-.398-.025-.613.175-.811.18-.178.398-.465.597-.698.2-.233.266-.398.399-.664.133-.265.066-.498-.033-.697-.1-.199-.9-2.168-1.232-2.967-.324-.78-.654-.674-.9-.686l-.765-.013c-.266 0-.698.1-1.064.498-.366.398-1.398 1.366-1.398 3.33 0 1.963 1.431 3.861 1.63 4.127.2.265 2.815 4.297 6.822 6.027.953.412 1.697.658 2.277.842.957.305 1.828.262 2.516.159.767-.114 2.355-.963 2.688-1.893.333-.93.333-1.727.233-1.893-.1-.166-.366-.265-.764-.464z" fill="white"/>
+      </svg>
+      <span class="wa-close-icon">✕</span>
+      <!-- Badge de notificación -->
+      <span class="wa-badge" id="waBadge">1</span>
+    </button>
+
+  </div>
+
+  <!-- ════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════ -->
+  <script>
+    /* ──────────────────────────────────
+       1. SCROLL REVEAL
+    ────────────────────────────────── */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    /* ──────────────────────────────────
+       2. NAV ACTIVO EN SCROLL
+    ────────────────────────────────── */
+    const allSections = document.querySelectorAll('section[id]');
+    const allNavLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      allSections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 150) {
+          current = section.getAttribute('id');
+        }
+      });
+      allNavLinks.forEach(link => {
+        link.style.color = '';
+        link.style.setProperty('--active', '0');
+        if (link.getAttribute('href') === '#' + current) {
+          link.style.color = 'var(--blue-glow)';
+        }
+      });
+    });
+
+    /* ──────────────────────────────────
+       3. HAMBURGER MENÚ
+    ────────────────────────────────── */
+    function toggleMenu() {
+      const nav  = document.getElementById('navLinks');
+      const btn  = document.getElementById('hamburger');
+      const open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+
+    function closeMenu() {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    /* ──────────────────────────────────
+       4. FORMULARIO DE CONTACTO
+    ────────────────────────────────── */
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nombre  = document.getElementById('nombre').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+      const btn     = document.getElementById('btnSubmit');
+
+      // Validación básica
+      if (!nombre || !email || !mensaje) {
+        btn.textContent = '⚠️ Completa los campos obligatorios';
+        btn.style.background = '#b45309';
+        setTimeout(() => {
+          btn.textContent = '🚀 Enviar Solicitud — Es Gratis';
+          btn.style.background = '';
+        }, 3000);
+        return;
+      }
+
+      // Validar email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        btn.textContent = '⚠️ Correo electrónico inválido';
+        btn.style.background = '#b45309';
+        setTimeout(() => {
+          btn.textContent = '🚀 Enviar Solicitud — Es Gratis';
+          btn.style.background = '';
+        }, 3000);
+        return;
+      }
+
+      // Estado de carga
+      btn.textContent = '⏳ Enviando...';
+      btn.disabled = true;
+      btn.style.background = 'var(--blue-dim)';
+
+      // Simular envío (reemplaza con tu lógica real: fetch/emailJS/etc)
+      setTimeout(() => {
+        btn.textContent = '✅ ¡Solicitud enviada! Te contactamos pronto.';
+        btn.style.background = '#166534';
+        btn.disabled = false;
+
+        // Limpiar formulario
+        document.getElementById('contactForm').reset();
+
+        setTimeout(() => {
+          btn.textContent = '🚀 Enviar Solicitud — Es Gratis';
+          btn.style.background = '';
+        }, 5000);
+      }, 1500);
+    });
+
+    /* ──────────────────────────────────
+       5. WIDGET FLOTANTE WHATSAPP
+    ────────────────────────────────── */
+    const WA_NUMBER  = '593960621805';
+    const WA_DEFAULT = 'Hola%20Germa%20Flex%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios.';
+
+    let waChatOpen = false;
+
+    // Ocultar tooltip después de 5 segundos
+    setTimeout(() => {
+      const tooltip = document.getElementById('waTooltip');
+      if (tooltip) {
+        tooltip.style.opacity = '0';
+        tooltip.style.transition = 'opacity 0.5s';
+        setTimeout(() => tooltip.style.display = 'none', 500);
+      }
+    }, 5000);
+
+    function toggleWaChat() {
+      waChatOpen = !waChatOpen;
+      const bubble  = document.getElementById('waBubble');
+      const fab     = document.getElementById('waFab');
+      const badge   = document.getElementById('waBadge');
+      const tooltip = document.getElementById('waTooltip');
+
+      bubble.classList.toggle('open', waChatOpen);
+      fab.classList.toggle('open', waChatOpen);
+
+      if (waChatOpen) {
+        // Ocultar badge y tooltip al abrir
+        if (badge)   badge.style.display   = 'none';
+        if (tooltip) tooltip.style.display = 'none';
+        // Foco en el input
+        setTimeout(() => {
+          const input = document.getElementById('waInput');
+          if (input) input.focus();
+        }, 350);
+      }
+    }
+
+    function closeWaChat() {
+      waChatOpen = false;
+      document.getElementById('waBubble').classList.remove('open');
+      document.getElementById('waFab').classList.remove('open');
+    }
+
+    function sendWaMessage() {
+      const input = document.getElementById('waInput');
+      const text  = input ? input.value.trim() : '';
+
+      // Construir URL de WhatsApp con el mensaje del usuario o el predeterminado
+      const encoded = text
+        ? encodeURIComponent(text)
+        : WA_DEFAULT;
+
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encoded}`, '_blank');
+
+      // Limpiar input
+      if (input) input.value = '';
+    }
+
+    /* ──────────────────────────────────
+       6. CERRAR MENÚ AL HACER CLIC FUERA
+    ────────────────────────────────── */
+    document.addEventListener('click', function(e) {
+      const nav = document.getElementById('navLinks');
+      const btn = document.getElementById('hamburger');
+      if (nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    /* ──────────────────────────────────
+       7. CERRAR WA AL HACER CLIC FUERA
+    ────────────────────────────────── */
+    document.addEventListener('click', function(e) {
+      const float = document.getElementById('waFloat');
+      if (waChatOpen && float && !float.contains(e.target)) {
+        closeWaChat();
+      }
+    });
+  </script>
+
+</body>
+</html>
